@@ -1,0 +1,237 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* font-family: "Manrope", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+}
+/* ---------------PRICING SECTION--------------- */
+.pricing-section {
+  padding-top: 12rem;
+}
+.pricing-card {
+  background: #f4f6fc;
+  border-radius: 12px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  width: 700px;
+  height: 700px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+}
+.pricing-card:hover .h3,
+.pricing-card:hover .h6,
+.pricing-card:hover .body-md,
+.pricing-card:hover .body-sm {
+  color: #fff;
+}
+.pricing-card:hover {
+  background-color: #1c1e53;
+}
+.pricing-card:hover .pricing_card-btn {
+  background-color: #fcd980;
+  color: #282938;
+}
+.pricing_card-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon_price {
+  color: #97daad;
+  font-size: 2.4rem;
+}
+.list-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 3.2rem 0;
+}
+.list-item {
+  display: flex;
+  /* align-items: center; */
+  gap: 1.4rem;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing_card-btn:link,
+.pricing_card-btn:visited {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  text-decoration: none;
+  padding: 1.6rem 6.4rem;
+  background-color: #282938;
+  border-radius: 41px;
+  transition: all 0.3s;
+}
+.pricing_card-btn:hover,
+.pricing_card-btn:active {
+  background-color: #fcd980;
+  color: #282938;
+}
+
+/* ---------------FAQ SECTION------------------ */
+
+.faq-section {
+  padding: 11.8rem 0;
+}
+
+.blue {
+  color: #2405f2;
+}
+
+/* ------------------FOOTER SECTION-------------- */
+
+.footer-section {
+  padding: 9.6rem 0 0 0;
+  background-color: #1c1e53;
+}
+
+.contact-box_footer {
+  background-color: #fcd980;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.footer-icon_box {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.footer-icon {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.footer-last {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+.nav-link_:link,
+.nav-link_:visited {
+  color: #282938;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  text-decoration: none;
+}
+.nav-link_:hover,
+.nav-link_:active {
+  color: #1c1e53;
+}
+/* -------------------HEADER SECTION----------- */
+
+.nav-btn:link,
+.nav-btn:visited {
+  padding: 1.6rem 4.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  border: 1px solid #f4f6fc;
+  border-radius: 4.1rem;
+  transition: all 0.3s;
+}
+.nav-btn:hover,
+.nav-btn:active {
+  color: #1c1e53;
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: #1c1e53;
+  padding: 2rem 0;
+}
+.nav-item {
+  margin-right: 1.8rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  color: #bbbbcb;
+  transition: all 0.3s;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: "";
+  display: inline-block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: all 0.3s;
+  transform-origin: left;
+}
+.nav-link::before {
+  content: "";
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: all 0.3s;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  background-color: #1c1e53;
+  z-index: 999;
+}

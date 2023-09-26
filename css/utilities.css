@@ -1,0 +1,144 @@
+.h1 {
+  font-size: 5.4rem;
+  font-weight: 600;
+  line-height: 7.4rem;
+}
+.h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 6.4rem;
+}
+.h3 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 5.6rem;
+}
+.h4 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 5.6rem;
+}
+.h5 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+}
+.h6 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+}
+
+.label-md {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+}
+
+.label-sm {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+.label-sm span{
+  font-weight: 600;
+}
+.label-xsm {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-top: -10px;
+}
+
+.body-sm {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.body-md {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.white {
+  color: #fff;
+}
+
+.dark-blue {
+  color: #282938;
+}
+.blue {
+  color: #2405f2;
+}
+.section {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(220px);
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+/* .accordion-button::before {
+  background-image: url(/images/cross-icon.png);
+} */
+
+.accordion {
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-bg: var(--bs-body-bg);
+  --bs-accordion-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  /* --bs-accordion-border-width: var(--bs-border-width); */
+  /* --bs-accordion-border-color: var(--bs-border-color); */
+
+  /* --bs-accordion-border-radius: var(--bs-border-radius); */
+  /* --bs-accordion-inner-border-radius: calc(
+    var(--bs-border-radius) - (var(--bs-border-width))
+  ); */
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url(../images/cross-icon.png);
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(90deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url(../images/cross-icon.png);
+  /* --bs-accordion-btn-focus-border-color: #86b7fe; */
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0 rgba(13, 110, 253, 1);
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  /* --bs-accordion-active-color: var(--bs-primary-text-emphasis); */
+  /* --bs-accordion-active-bg: var(--bs-primary-bg-subtle); */
+}
+.accordion-button::after {
+  background-image: url(../images/plus-icon.png);
+}
+
+.accordian-number {
+  margin-right: 40px;
+  color: blue;
+}
+
+@media (min-width: 87.5em) {
+  .contact-form_box {
+    padding: 9.6rem 4.8rem 3.4rem 4.8rem;
+  }
+}
